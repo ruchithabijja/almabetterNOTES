@@ -1,0 +1,747 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMF6R+zHYMIb/Zh0nOLkukg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ruchithabijja/almabetterNOTES/blob/main/Untitled5.ipynb(truple%2Clist%26dictionary\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ***tuple***"
+      ],
+      "metadata": {
+        "id": "RqXx6lRpklFs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "qXgoO8hGY3GR"
+      },
+      "outputs": [],
+      "source": [
+        "a = ( 1,'a',\"true\",4.2)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1q5dT3npZFlm",
+        "outputId": "fe4cbf43-3727-48c6-fe2a-307c87142940"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(1, 'a', 'true', 4.2)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YZKO5Th7ZIok",
+        "outputId": "d2d4fda7-1671-4837-9ab0-222939e088bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "tuple"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ***list***"
+      ],
+      "metadata": {
+        "id": "J3a-Wmddkdjz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=[1,2,5,3,7,9,5,4]     #list\n"
+      ],
+      "metadata": {
+        "id": "c7gk7h7mZK0V"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zUhuVx5ag7Fb",
+        "outputId": "c9448931-9edd-48e3-c8a8-9e250be3f451"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 5, 3, 7, 9, 5, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b[7] = 0 #number 4 convert into a 0"
+      ],
+      "metadata": {
+        "id": "xJ6jF-RRhAJm"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6UTwV2blhB3Q",
+        "outputId": "b21276f2-b6c0-40bf-97b4-f643dfa5e43e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 5, 3, 7, 9, 5, 0]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# tuple (zip)"
+      ],
+      "metadata": {
+        "id": "XsIGFMmpkwO-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = [\"ruchitha\",\"shruti\",\"Prasana\",\"lucky\"]\n",
+        "father = [\"kana\",\"sathish\",\"venu\",\"tirupathi\"]\n",
+        "surname = [\"bijja\",\"konda\",\"myakal\",\"brinjja\"]"
+      ],
+      "metadata": {
+        "id": "9oUoYcQCky3V"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "zip(name,father,surname)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MYcNUT_iln_K",
+        "outputId": "540a1580-b755-40cd-e945-ac0d19b4f668"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<zip at 0x7fb12154d550>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "full_name = list(zip(name,father,surname))"
+      ],
+      "metadata": {
+        "id": "pYOq7DRnl8yq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "full_name"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ue3VmBM5mbWa",
+        "outputId": "e366d067-323a-42c5-afe8-d5c76a4fdc16"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[('ruchitha', 'kana', 'bijja'),\n",
+              " ('shruti', 'sathish', 'konda'),\n",
+              " ('Prasana', 'venu', 'myakal'),\n",
+              " ('lucky', 'tirupathi', 'brinjja')]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "WfMqnmG_mxTD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# sets"
+      ],
+      "metadata": {
+        "id": "hqCnfx4bu1_j"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list = (2,2,1,4,5,9,6,8,8,6,7,8)"
+      ],
+      "metadata": {
+        "id": "NmOF6oTtu6dp"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = set(my_list)"
+      ],
+      "metadata": {
+        "id": "c6NPxfwWvFnp"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WEhGRyTqvWrO",
+        "outputId": "745f7f12-aa08-400d-f370-f0f9256c8529"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 4, 5, 6, 7, 8, 9}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set[0]  # error beacuse set are unorderd"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 165
+        },
+        "id": "QuRAjUH-vYsY",
+        "outputId": "f47a7a7b-7294-46b2-c2ef-8b732748612a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-23-e8735943f369>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmy_set\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m  \u001b[0;31m# error beacuse set are unorderd\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'set' object is not subscriptable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set.add(10)"
+      ],
+      "metadata": {
+        "id": "guC-tC5Nvnxo"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4fgfB264-MJk",
+        "outputId": "40e51168-7d3d-4562-c42f-39e65c8cf536"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 4, 5, 6, 7, 8, 9, 10}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set.update([11,14,15])"
+      ],
+      "metadata": {
+        "id": "pty7g3Pg-Tt5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZhCtQy7v-ZML",
+        "outputId": "b2797b24-76c4-4078-a64a-8d94f6125d65"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 14, 15}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set.remove(8)"
+      ],
+      "metadata": {
+        "id": "2joGzWyf-ivI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lWTcwfdY_rzg",
+        "outputId": "ac35bf6b-5ff2-48fe-98a5-3956c19ffe16"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 4, 6, 9, 10, 11, 14}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = {1,2,3,4,5}\n",
+        "b={3,4,5,6,7,8}\n"
+      ],
+      "metadata": {
+        "id": "QxLDaHUz_3Aq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.union(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QMkVERBSBM3F",
+        "outputId": "340e1890-6bd4-4407-9c71-5bda98170306"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 3, 4, 5, 6, 7, 8}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 47
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a|b  # another way of union\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ucHVSvwQBPhA",
+        "outputId": "00b20996-810b-4acf-e451-cffc68f09f3f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 3, 4, 5, 6, 7, 8}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 49
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.intersection(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "edL9aJ_KBzEQ",
+        "outputId": "52551274-0724-40c9-e90a-eeeee1363757"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{3, 4, 5}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 50
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.difference(b) # which one is under a after diffrented"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TvAwiNAfCD_5",
+        "outputId": "7cf11f8b-6fb2-46d3-bd63-df319b7ebdd9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 53
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a-b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S1eLApH1C-8F",
+        "outputId": "7873a7fa-4f3c-42aa-929f-6b7acc49f48d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 55
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b.difference(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fjjZFdXlCbvr",
+        "outputId": "8d46ba19-5b51-4b6b-b315-8122fd888398"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{6, 7, 8}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 54
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b-a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lQrlbls1C1X3",
+        "outputId": "f4e2fe3f-adba-422e-9d07-657d01f0e1a3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{6, 7, 8}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 57
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "symmetric_difference()\n"
+      ],
+      "metadata": {
+        "id": "YpcUHyhsDgTH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.symmetric_difference(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yFme7BsKD6le",
+        "outputId": "0af7116b-c816-43f8-dc64-89a641e9bedb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 6, 7, 8}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 58
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a^b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pLAPtca0EGwU",
+        "outputId": "d4bc4724-e916-483a-9185-a0ab5405ff3a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 6, 7, 8}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 59
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "IyiJE9ssEM6O"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
